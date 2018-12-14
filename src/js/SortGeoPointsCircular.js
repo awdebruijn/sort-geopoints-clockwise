@@ -17,7 +17,11 @@ export default class SortGeoPointsCircular {
 
 		// filter out referencepoint
 		sortedLatlongs = sortedLatlongs.filter((point) => {
-			if (point.lat !== referencePoint.lat && point.lng !== referencePoint.lng) {
+			if ( 
+				(point.lat !== referencePoint.lat && point.lng !== referencePoint.lng) 
+				|| (point.lat === referencePoint.lat && point.lng !== referencePoint.lng) 
+				|| (point.lat !== referencePoint.lat && point.lng === referencePoint.lng)
+			){		
 				return point;
 			}
 		});

@@ -36,6 +36,10 @@ export default {
                     long: 4.6658845
                 },
                 {
+                    lat: 51.8577915,
+                    long: 4.6658845
+                },
+                {
                     lat: 52.9342776, 
                     long: 4.7260704
                 },
@@ -66,7 +70,6 @@ export default {
             let sortedForPolyline = new SortGeoPointsCircular(this.markers).sortMarkers();
             let polyline = GmShapeFunctions.createPolyline(map, sortedForPolyline, '#ff0000', '#ff0000');
         });
-
     }
 }
 </script>
