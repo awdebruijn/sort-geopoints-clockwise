@@ -4,7 +4,7 @@ import * as VueGoogleMaps from 'vue2-google-maps';
 Vue.use(VueGoogleMaps, {
     load: {
         installComponents: true,
-        key: 'AIzaSyCLc11vTaQZzAcBaR1FmiPiB-7c6NzfV6o',
+        key: '',
         v: '3.34',
         libraries: 'geometry'
     }
